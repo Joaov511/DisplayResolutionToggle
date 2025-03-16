@@ -17,8 +17,8 @@ By default, the script toggles between **1080p**(1920x1080) and **1440p** (2560x
     $defaultWidth = 1920
     $defaultHeight = 1080
 
-    $desiredWidth = 2560
-    $desiredHeight = 1440
+    $customResolutionWidth = 2560
+    $customResolutionHeight = 1440
 ```
 
 Simply change these values to match the resolutions you want to toggle between.
