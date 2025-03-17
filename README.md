@@ -7,11 +7,11 @@ It’s especially useful for games that don’t work with **DSR** (Dynamic Super
 # Installation
 
 1. Download all the required files.
-2. Click or run the ```chres.bat``` file.
+2. Click or run the ```RunResolutionToggle.bat``` file.
 
 # Change custom resolution
 
-By default, the script toggles between **1080p**(1920x1080) and **1440p** (2560x1440). To modify the default or custom resolution, open the ```changeDisplayResolution.ps1``` script and adjust the following values:
+By default, the script toggles between **1080p**(1920x1080) and **1440p** (2560x1440). To modify the default or custom resolution, open the ```resolutionToggleScript.ps1``` script and adjust the following values:
 
 ```
     $defaultWidth = 1920
