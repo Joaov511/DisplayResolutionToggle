@@ -22,3 +22,7 @@ By default, the script toggles between **1080p**(1920x1080) and **1440p** (2560x
 ```
 
 Simply change these values to match the resolutions you want to toggle between.
+
+# Notes
+
+1. Check if your custom resolution is avaliable.
