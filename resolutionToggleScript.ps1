@@ -11,7 +11,21 @@ $displayInfo = Get-DisplayResolution
 $displayWidth = $displayInfo.dmPelsWidth
 
 if($displayWidth -eq $defaultWidth) {
-    Start-Process $exePath -ArgumentList "/w=$customResolutionWidth", "/h=$customResolutionHeight", "/d=0" -WindowStyle Hidden
+    $process = Start-Process $exePath -ArgumentList "/w=$customResolutionWidth", "/h=$customResolutionHeight", "/d=0" -WindowStyle Hidden -PassThru -Wait
 } else {
-    Start-Process $exePath -ArgumentList "/w=$defaultWidth", "/h=$defaultHeight", "/d=0" -WindowStyle Hidden
+    $process = Start-Process $exePath -ArgumentList "/w=$defaultWidth", "/h=$defaultHeight", "/d=0" -WindowStyle Hidden -PassThru -Wait
 }
+
+if($process.ExitCode -ne 0) {
+    throw "Error: ChangeScreenResolution.exe failed, resolution specified not supported"
+}
+
+
+
+
+
+
+
+
+
+
