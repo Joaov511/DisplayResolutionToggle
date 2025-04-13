@@ -1,3 +1,5 @@
+Import-Module $PSScriptRoot\Modules\DisplaySettings
+
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $exePath = Join-Path $scriptDir "ChangeScreenResolution.exe"
 
